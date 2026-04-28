@@ -1,9 +1,11 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 import ErrorScene from './ErrorScene';
 
 export default function App() {
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route
         path="/404"
         element={
